@@ -36,7 +36,7 @@ $(function(){
         //一秒鐘有1000毫秒
         //每分鐘60秒、每小時60分鐘、每天24小時
         let millisecsPerDay = 24*60*60*1000;
-        for(var x=1;x<topicCount;x++){
+        for(var x=1;x<=topicCount;x++){
             document.getElementById("courseTable").rows[x].cells[1].innerHTML=(new Date(startDate.getTime()+7*(x-1)*millisecsPerDay)).toLocaleDateString().toString().substring(5);
            
         }
